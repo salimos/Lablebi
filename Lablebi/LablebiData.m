@@ -10,4 +10,18 @@
 
 @implementation LablebiData
 
+
+-(id)initWithTitle:(NSString *)title La:(float)La Lg:(float)Lg {
+    if ((self = [super init])) {
+        self.title = title;
+        self.La = La;
+        self.Lg = Lg;
+        
+    }
+    return self;
+}
+
+
+
+
 @end
