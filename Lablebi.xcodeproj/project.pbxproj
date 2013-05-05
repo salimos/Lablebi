@@ -19,6 +19,7 @@
 		930BC31D1736AE5300E70915 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930BC31B1736AE5300E70915 /* MainStoryboard.storyboard */; };
 		930BC3201736AE5300E70915 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BC31F1736AE5300E70915 /* MasterViewController.m */; };
 		930BC3231736AE5300E70915 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BC3221736AE5300E70915 /* DetailViewController.m */; };
+		9343D6CA1736B11A0016CAEC /* LablebiData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9343D6C91736B11A0016CAEC /* LablebiData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		930BC31F1736AE5300E70915 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		930BC3211736AE5300E70915 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		930BC3221736AE5300E70915 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		9343D6C81736B11A0016CAEC /* LablebiData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LablebiData.h; sourceTree = "<group>"; };
+		9343D6C91736B11A0016CAEC /* LablebiData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LablebiData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,13 +89,8 @@
 		930BC3091736AE5300E70915 /* Lablebi */ = {
 			isa = PBXGroup;
 			children = (
-				930BC3121736AE5300E70915 /* AppDelegate.h */,
-				930BC3131736AE5300E70915 /* AppDelegate.m */,
-				930BC31B1736AE5300E70915 /* MainStoryboard.storyboard */,
-				930BC31E1736AE5300E70915 /* MasterViewController.h */,
-				930BC31F1736AE5300E70915 /* MasterViewController.m */,
-				930BC3211736AE5300E70915 /* DetailViewController.h */,
-				930BC3221736AE5300E70915 /* DetailViewController.m */,
+				9343D6C71736B0F70016CAEC /* Model */,
+				9343D6C61736B0EB0016CAEC /* Interfaces */,
 				930BC30A1736AE5300E70915 /* Supporting Files */,
 			);
 			path = Lablebi;
@@ -110,6 +108,29 @@
 				930BC3191736AE5300E70915 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9343D6C61736B0EB0016CAEC /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				930BC3121736AE5300E70915 /* AppDelegate.h */,
+				930BC3131736AE5300E70915 /* AppDelegate.m */,
+				930BC31B1736AE5300E70915 /* MainStoryboard.storyboard */,
+				930BC31E1736AE5300E70915 /* MasterViewController.h */,
+				930BC31F1736AE5300E70915 /* MasterViewController.m */,
+				930BC3211736AE5300E70915 /* DetailViewController.h */,
+				930BC3221736AE5300E70915 /* DetailViewController.m */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		9343D6C71736B0F70016CAEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9343D6C81736B11A0016CAEC /* LablebiData.h */,
+				9343D6C91736B11A0016CAEC /* LablebiData.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +203,7 @@
 				930BC3141736AE5300E70915 /* AppDelegate.m in Sources */,
 				930BC3201736AE5300E70915 /* MasterViewController.m in Sources */,
 				930BC3231736AE5300E70915 /* DetailViewController.m in Sources */,
+				9343D6CA1736B11A0016CAEC /* LablebiData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +326,7 @@
 				930BC3281736AE5300E70915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
