@@ -15,7 +15,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //Nos déclrations
-    LablebiData *lb1 = [[LablebiData alloc] initWithTitle:@"Halfaouine" La:10.000000 Lg:30.00000000];
+    LablebiData *lb1 = [[LablebiData alloc] initWithTitle:@"Halfaouine" La:10.223465 Lg:36.8347707];;
     LablebiData *lb2 = [[LablebiData alloc] initWithTitle:@"Weld elas" La:11.000000 Lg:30.02000000];
     LablebiData *lb3 = [[LablebiData alloc] initWithTitle:@"Bou ahmed" La:12.000000 Lg:30.03000000];
     LablebiData *lb4 = [[LablebiData alloc] initWithTitle:@"weld ebba" La:13.000000 Lg:30.04000000];

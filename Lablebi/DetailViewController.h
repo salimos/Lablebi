@@ -17,4 +17,7 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *carte;
 
+@property (strong) NSMutableArray *sa7fa;
+
+
 @end

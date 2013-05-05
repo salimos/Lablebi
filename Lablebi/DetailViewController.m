@@ -9,6 +9,8 @@
 #import "DetailViewController.h"
 #import "MapKit/MapKit.h"
 
+#import "LablebiData.h"
+
 @interface DetailViewController ()
 - (void)configureView;
 @end
@@ -41,8 +43,23 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    _carte.showsUserLocation = YES;
     
-    carte.co
+    //LablebiData *sa7fa = [self.sa7fa getObjects:[self title]];
+    //sa7fa.L
+    NSLog([self title]);
+    CLLocationCoordinate2D annotationCoord;
+    
+    annotationCoord.latitude = 36.836493;
+    annotationCoord.longitude = 10.223808;
+    
+    MKPointAnnotation *annotationPoint = [[MKPointAnnotation alloc] init];
+    annotationPoint.coordinate = annotationCoord;
+    annotationPoint.title = @"Halfaouine";
+    annotationPoint.subtitle = @"Lablebi LIGHT";
+    [_carte addAnnotation:annotationPoint];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
