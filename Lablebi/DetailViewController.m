@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "MapKit/MapKit.h"
 
 @interface DetailViewController ()
 - (void)configureView;
@@ -40,6 +41,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    
+    carte.co
 }
 
 - (void)didReceiveMemoryWarning

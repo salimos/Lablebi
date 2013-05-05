@@ -20,6 +20,7 @@
 		930BC3201736AE5300E70915 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BC31F1736AE5300E70915 /* MasterViewController.m */; };
 		930BC3231736AE5300E70915 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BC3221736AE5300E70915 /* DetailViewController.m */; };
 		9343D6CA1736B11A0016CAEC /* LablebiData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9343D6C91736B11A0016CAEC /* LablebiData.m */; };
+		9343D6CC1736BF2A0016CAEC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9343D6CB1736BF2A0016CAEC /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		930BC3221736AE5300E70915 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		9343D6C81736B11A0016CAEC /* LablebiData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LablebiData.h; sourceTree = "<group>"; };
 		9343D6C91736B11A0016CAEC /* LablebiData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LablebiData.m; sourceTree = "<group>"; };
+		9343D6CB1736BF2A0016CAEC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9343D6CC1736BF2A0016CAEC /* MapKit.framework in Frameworks */,
 				930BC3041736AE5300E70915 /* UIKit.framework in Frameworks */,
 				930BC3061736AE5300E70915 /* Foundation.framework in Frameworks */,
 				930BC3081736AE5300E70915 /* CoreGraphics.framework in Frameworks */,
@@ -62,6 +65,7 @@
 		930BC2F71736AE5300E70915 = {
 			isa = PBXGroup;
 			children = (
+				9343D6CB1736BF2A0016CAEC /* MapKit.framework */,
 				930BC3091736AE5300E70915 /* Lablebi */,
 				930BC3021736AE5300E70915 /* Frameworks */,
 				930BC3011736AE5300E70915 /* Products */,
