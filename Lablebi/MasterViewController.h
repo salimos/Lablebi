@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LablebiData.h"
 
 @interface MasterViewController : UITableViewController
+
+@property (strong) NSMutableArray *sa7fa;
+
 
 @end

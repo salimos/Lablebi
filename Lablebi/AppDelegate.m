@@ -7,12 +7,24 @@
 //
 
 #import "AppDelegate.h"
+#import "MasterViewController.h"
+#import "LablebiData.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    //Nos déclrations
+    LablebiData *lb1 = [[LablebiData alloc] initWithTitle:@"Halfaouine" La:10.000000 Lg:30.00000000];
+    LablebiData *lb2 = [[LablebiData alloc] initWithTitle:@"Weld elas" La:11.000000 Lg:30.02000000];
+    LablebiData *lb3 = [[LablebiData alloc] initWithTitle:@"Bou ahmed" La:12.000000 Lg:30.03000000];
+    LablebiData *lb4 = [[LablebiData alloc] initWithTitle:@"weld ebba" La:13.000000 Lg:30.04000000];
+    NSMutableArray *sa7fa = [NSMutableArray arrayWithObjects:lb1, lb2, lb3, lb4, nil];
+
+    UINavigationController * navController = (UINavigationController *) self.window.rootViewController;
+    MasterViewController * masterController = [navController.viewControllers objectAtIndex:0];
+    masterController.sa7fa = sa7fa;
+    
     return YES;
 }
 							

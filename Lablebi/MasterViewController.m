@@ -10,12 +10,16 @@
 
 #import "DetailViewController.h"
 
+#import "LablebiData.h"
+
 @interface MasterViewController () {
     NSMutableArray *_objects;
 }
 @end
 
 @implementation MasterViewController
+
+
 
 - (void)awakeFromNib
 {
@@ -30,6 +34,7 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    self.title = @"Chasse au Lablebi";
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,17 +62,25 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return _sa7fa.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MaCell" forIndexPath:indexPath];
+    
+    LablebiData *sa7fa = [self.sa7fa objectAtIndex:indexPath.row];
+    cell.textLabel.text = sa7fa.title;
+//    cell.imageView.image = bug.thumbImage;
     return cell;
+    
 }
+
+
+
+
+
+
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
