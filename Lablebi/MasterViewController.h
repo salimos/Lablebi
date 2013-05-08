@@ -11,7 +11,7 @@
 
 @interface MasterViewController : UITableViewController
 
-@property (strong) NSMutableArray *sa7fa;
+@property (strong) NSMutableArray *blayes;
 
 
 @end

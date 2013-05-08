@@ -8,22 +8,24 @@
 
 #import "AppDelegate.h"
 #import "MasterViewController.h"
-#import "LablebiData.h"
+#import "LablebiDocs.h"
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //Nos déclrations
-    LablebiData *lb1 = [[LablebiData alloc] initWithTitle:@"Halfaouine" La:10.223465 Lg:36.8347707];;
-    LablebiData *lb2 = [[LablebiData alloc] initWithTitle:@"Weld elas" La:11.000000 Lg:30.02000000];
-    LablebiData *lb3 = [[LablebiData alloc] initWithTitle:@"Bou ahmed" La:12.000000 Lg:30.03000000];
-    LablebiData *lb4 = [[LablebiData alloc] initWithTitle:@"weld ebba" La:13.000000 Lg:30.04000000];
-    NSMutableArray *sa7fa = [NSMutableArray arrayWithObjects:lb1, lb2, lb3, lb4, nil];
+    LablebiDocs *s1 =[[LablebiDocs alloc]initWithTitle:@"Halfaouine" La:10.223465 Lg:36.8347707];
+    LablebiDocs *s2 = [[LablebiDocs alloc] initWithTitle:@"Weld elas" La:11.000000 Lg:30.02000000];
+    LablebiDocs *s3 = [[LablebiDocs alloc] initWithTitle:@"Bou ahmed" La:12.000000 Lg:30.03000000];
+    LablebiDocs *s4 = [[LablebiDocs alloc] initWithTitle:@"weld ebba" La:13.000000 Lg:30.04000000];
+    
+    NSMutableArray *blayes = [NSMutableArray arrayWithObjects:s1, s2, s3, s4, nil];
 
     UINavigationController * navController = (UINavigationController *) self.window.rootViewController;
     MasterViewController * masterController = [navController.viewControllers objectAtIndex:0];
-    masterController.sa7fa = sa7fa;
+    masterController.blayes = blayes;
     
     return YES;
 }

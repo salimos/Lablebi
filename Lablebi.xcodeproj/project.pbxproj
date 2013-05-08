@@ -21,6 +21,7 @@
 		930BC3231736AE5300E70915 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BC3221736AE5300E70915 /* DetailViewController.m */; };
 		9343D6CA1736B11A0016CAEC /* LablebiData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9343D6C91736B11A0016CAEC /* LablebiData.m */; };
 		9343D6CC1736BF2A0016CAEC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9343D6CB1736BF2A0016CAEC /* MapKit.framework */; };
+		93E9D3261739D1FD00E0FC55 /* LablebiDocs.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E9D3251739D1FD00E0FC55 /* LablebiDocs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		9343D6C81736B11A0016CAEC /* LablebiData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LablebiData.h; sourceTree = "<group>"; };
 		9343D6C91736B11A0016CAEC /* LablebiData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LablebiData.m; sourceTree = "<group>"; };
 		9343D6CB1736BF2A0016CAEC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		93E9D3241739D1FD00E0FC55 /* LablebiDocs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LablebiDocs.h; sourceTree = "<group>"; };
+		93E9D3251739D1FD00E0FC55 /* LablebiDocs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LablebiDocs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 			children = (
 				9343D6C81736B11A0016CAEC /* LablebiData.h */,
 				9343D6C91736B11A0016CAEC /* LablebiData.m */,
+				93E9D3241739D1FD00E0FC55 /* LablebiDocs.h */,
+				93E9D3251739D1FD00E0FC55 /* LablebiDocs.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				930BC3201736AE5300E70915 /* MasterViewController.m in Sources */,
 				930BC3231736AE5300E70915 /* DetailViewController.m in Sources */,
 				9343D6CA1736B11A0016CAEC /* LablebiData.m in Sources */,
+				93E9D3261739D1FD00E0FC55 /* LablebiDocs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

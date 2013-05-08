@@ -11,6 +11,8 @@
 #import "DetailViewController.h"
 
 #import "LablebiData.h"
+#import "LablebiDocs.h"
+
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -62,18 +64,18 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _sa7fa.count;
+    return _blayes.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MaCell" forIndexPath:indexPath];
-    
-    LablebiData *sa7fa = [self.sa7fa objectAtIndex:indexPath.row];
-    cell.textLabel.text = sa7fa.title;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MaCell"];
+    LablebiDocs *sa7fa = [self.blayes objectAtIndex:indexPath.row];
+    cell.textLabel.text = sa7fa.data.title;
+//    cell.imageView.image = sa7fa.thumbImage;
     return cell;
     
-//    cell.imageView.image = sa7fa.thumbImage;
+    
     
 }
 
@@ -115,13 +117,13 @@
 }
 */
 
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
-    }
+    DetailViewController *detailController =segue.destinationViewController;
+    LablebiDocs *sa7fa = [self.blayes objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    detailController.detailItem = sa7fa;
 }
 
 @end

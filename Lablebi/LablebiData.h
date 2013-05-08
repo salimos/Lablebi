@@ -12,10 +12,8 @@
 
 @property (strong) NSString *title;
 
-@property (assign) float La;
-@property (assign) float Lg;
 
-- (id)initWithTitle:(NSString*)title La:(float)La Lg:(float)Lg;
+- (id)initWithTitle:(NSString*)title;
 
 
 

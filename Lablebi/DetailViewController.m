@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "MapKit/MapKit.h"
 
+#import "LablebiDocs.h"
 #import "LablebiData.h"
 
 @interface DetailViewController ()
@@ -34,7 +35,13 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        
+        self.La = self.detailItem.La;
+        self.Lg = self.detailItem.Lg;
+
+        self.title = self.detailItem.data.title;
+        //self.title.La .rateView.rating = self.detailItem.data.rating;
+        //self.imageView.image = self.detailItem.fullImage;
     }
 }
 
@@ -45,17 +52,18 @@
     [self configureView];
     _carte.showsUserLocation = YES;
     
-    //LablebiData *sa7fa = [self.sa7fa getObjects:[self title]];
-    //sa7fa.L
-    NSLog([self title]);
+    
+    
+    NSLog(@"test : %f" ,self.La);
+    //NSLog(@"%f",[self.detailItem La]);
     CLLocationCoordinate2D annotationCoord;
     
-    annotationCoord.latitude = 36.836493;
-    annotationCoord.longitude = 10.223808;
+    annotationCoord.latitude = self.La;
+    annotationCoord.longitude = self.Lg;
     
     MKPointAnnotation *annotationPoint = [[MKPointAnnotation alloc] init];
     annotationPoint.coordinate = annotationCoord;
-    annotationPoint.title = @"Halfaouine";
+    annotationPoint.title = self.title;
     annotationPoint.subtitle = @"Lablebi LIGHT";
     [_carte addAnnotation:annotationPoint];
     
