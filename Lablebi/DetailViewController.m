@@ -48,21 +48,24 @@
     [self configureView];
     _carte.showsUserLocation = YES;
     
-    
-    
-   // NSLog(@"test : %f" ,self.La);
-    //NSLog(@"%f",[self.detailItem La]);
+    //Centrer la Carte @ UserLocation :aucune idée pourquoi ce code marche :D 
+    [_carte setCenterCoordinate:_carte.userLocation.location.coordinate animated:YES];
+
+    //Déclaration du Pt d'annotation
     CLLocationCoordinate2D annotationCoord;
     
+    //Remplissage du code depuis notre master (detailIteam)
     annotationCoord.latitude = self.detailItem.La;
     annotationCoord.longitude = self.detailItem.Lg;
     
+    //declaration du marqueur 
     MKPointAnnotation *annotationPoint = [[MKPointAnnotation alloc] init];
     annotationPoint.coordinate = annotationCoord;
     annotationPoint.title = self.detailItem.data.title;
     annotationPoint.subtitle = @"Lablebi LIGHT";
+    //Ajout du marqueur
     [_carte addAnnotation:annotationPoint];
-    
+
     
 }
 
