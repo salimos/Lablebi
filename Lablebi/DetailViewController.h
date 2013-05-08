@@ -20,8 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @property (weak, nonatomic) IBOutlet MKMapView *carte;
 
-@property (assign) float La;
-@property (assign) float Lg;
+//@property (assign) float La;
+//@property (assign) float Lg;
 
 @property (strong) NSMutableArray *sa7fa;
 

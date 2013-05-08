@@ -16,10 +16,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //Nos déclrations
-    LablebiDocs *s1 =[[LablebiDocs alloc]initWithTitle:@"Halfaouine" La:10.223465 Lg:36.8347707];
-    LablebiDocs *s2 = [[LablebiDocs alloc] initWithTitle:@"Weld elas" La:11.000000 Lg:30.02000000];
-    LablebiDocs *s3 = [[LablebiDocs alloc] initWithTitle:@"Bou ahmed" La:12.000000 Lg:30.03000000];
-    LablebiDocs *s4 = [[LablebiDocs alloc] initWithTitle:@"weld ebba" La:13.000000 Lg:30.04000000];
+    LablebiDocs *s1 =[[LablebiDocs alloc]initWithTitle:@"Halfaouine"  La:36.8347707 Lg:10.223465];
+    LablebiDocs *s2 = [[LablebiDocs alloc] initWithTitle:@"Weld elas" La:36.8200000 Lg:10.2200000 ];
+    LablebiDocs *s3 = [[LablebiDocs alloc] initWithTitle:@"Bou ahmed" La:36.8000000 Lg:10.23000000];
+    LablebiDocs *s4 = [[LablebiDocs alloc] initWithTitle:@"weld ebba" La:36.7900000 Lg:10.24000000];
     
     NSMutableArray *blayes = [NSMutableArray arrayWithObjects:s1, s2, s3, s4, nil];
 

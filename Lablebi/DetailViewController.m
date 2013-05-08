@@ -36,12 +36,8 @@
 
     if (self.detailItem) {
         
-        self.La = self.detailItem.La;
-        self.Lg = self.detailItem.Lg;
-
         self.title = self.detailItem.data.title;
-        //self.title.La .rateView.rating = self.detailItem.data.rating;
-        //self.imageView.image = self.detailItem.fullImage;
+        
     }
 }
 
@@ -54,16 +50,16 @@
     
     
     
-    NSLog(@"test : %f" ,self.La);
+   // NSLog(@"test : %f" ,self.La);
     //NSLog(@"%f",[self.detailItem La]);
     CLLocationCoordinate2D annotationCoord;
     
-    annotationCoord.latitude = self.La;
-    annotationCoord.longitude = self.Lg;
+    annotationCoord.latitude = self.detailItem.La;
+    annotationCoord.longitude = self.detailItem.Lg;
     
     MKPointAnnotation *annotationPoint = [[MKPointAnnotation alloc] init];
     annotationPoint.coordinate = annotationCoord;
-    annotationPoint.title = self.title;
+    annotationPoint.title = self.detailItem.data.title;
     annotationPoint.subtitle = @"Lablebi LIGHT";
     [_carte addAnnotation:annotationPoint];
     
